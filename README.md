@@ -1,2 +1,2 @@
-# registration-form
+# Registration Form
 FEWD Project 3
