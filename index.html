@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Name: Project 3 - Online Registration Form
+        Author: Chris Howell
+        Date: 04/28/2018
+    -->
+    <meta charset="utf-8">
+    <title>Chris Howell&#39;s Online Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+<body>
+  <header>
+    <h1>THE CODE REVIEW</h1>
+  </header>
+  <div class="container">
+
+  <main class="wrapper">
+    <div class="welcome">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+      
+    </div>
+    <hr class="thick-line">
+    <form action="index.html" method="post">
+      <hr class="thin-line">
+      <fieldset>
+        <legend><h2>Contact Information</h2></legend>
+
+        <ul>
+          <li class="row">
+            <label for="name">Full Name</label>
+            <input type="text" name="full_name" id="name" placeholder="Required" required>
+          </li>
+
+          <li class="row">
+            <label for="email">Email Address</label>  
+            <input type="email" name="email" id="email" placeholder="Required" required>
+          </li>
+
+          <li class="row">
+            <label for="phone">Phone Number</label>  
+            <input type="phone" name="phone_number" id="phone">
+          </li>
+          
+          <li class="row">
+            <label for="address">Street Address</label>
+            <input type="text" name="address" id="address">  
+          </li>
+
+          <li class="row">
+            <label for="city">City</label>  
+            <input type="text" name="city" id="city">
+          </li>
+          
+          <li class="row">
+            <label for="state">State</label>  
+            <select id="state" name="state">
+              <option selected disabled hidden>Choose state</option>
+              <option value="az">Arizona</option>
+              <option value="ca">California</option>
+              <option value="fl">Florida</option>
+
+              <option value="or">Oregon</option>
+              <option value="wa">Washington</option>
+            </select>
+          </li>
+
+          <li class="row">
+            <label for="zip">Zip Code</label>
+            <input type="number" name="zipcode" id="zip">  
+          </li>
+        </ul>
+
+      </fieldset>
+      <hr class="thin-line"/>
+      <fieldset>
+        <legend><h2>Newsletter</h2></legend>
+        <ul>
+          <label>Select the newsletters you would like to receive</label>
+          <li>
+            <input type="checkbox" name="newsletters" value="html">HTML News
+          </li>
+          <li>
+            <input type="checkbox" name="newsletters" value="css">CSS News
+          </li>
+          <li>
+            <input type="checkbox" name="newsletters" vakue="js">JavaScript News
+          </li>
+          </ul>
+        <ul>
+          <label>Newsletter format</label>
+          <li>
+            <input type="radio" name="format" value="html">HTML
+          </li>
+          <li>
+            <input type="radio" name="format" value="plain">Plain Text
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="comments">Other topics you'd like to hear about</label><br/>
+            <textarea id="comments" name="comments" rows="7"></textarea>
+          </li>
+
+          <li>
+            <button type="submit">Sign Up</button>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+  </main>
+  </div>
+  <footer>
+    <p>Copyright The Code Review</p>
+  </footer>
+
+</body>
+</html>
