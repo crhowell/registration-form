@@ -85,7 +85,7 @@ form fieldset {
 }
 form input[type="text"],
 form input[type="email"],
-form input[type="phone"],
+form input[type="tel"],
 form textarea,
 form select {
     background-color: #eee;
@@ -95,13 +95,14 @@ form select {
 }
 form input[type="text"],
 form input[type="email"],
-form input[type="phone"],
+form input[type="tel"],
 form textarea,
 form select {
     display: block;
     width: 100%;
 }
 form input[type="number"]{
+    display: block;
     background-color: #eee;
     border: none;
     border-radius: 5px;
@@ -137,7 +138,7 @@ button:hover {
  * Media queries
  *==============================*/
 
-@media(min-width: 769px){
+@media(min-width: 768px){
     .container {
         max-width: 80%;
         margin: 0 auto;
@@ -151,7 +152,7 @@ button:hover {
     }
     form input[type="text"],
     form input[type="email"],
-    form input[type="phone"],
+    form input[type="tel"],
     form select,
     form textarea {
         flex-basis: 80%;
@@ -162,7 +163,7 @@ button:hover {
     
 
 }
-@media(min-width: 1025px){
+@media(min-width: 1024px){
     .container {
         max-width: 50%;
         margin: 0 auto;
