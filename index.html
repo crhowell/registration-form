@@ -31,7 +31,6 @@
       <hr class="thin-line">
       <fieldset>
         <legend><h2>Contact Information</h2></legend>
-
         <ul>
           <li class="row">
             <label for="name">Full Name</label>
@@ -45,7 +44,7 @@
 
           <li class="row">
             <label for="phone">Phone Number</label>  
-            <input type="phone" name="phone_number" id="phone">
+            <input type="text" name="phone_number" id="phone">
           </li>
           
           <li class="row">
@@ -79,27 +78,30 @@
 
       </fieldset>
       <hr class="thin-line"/>
+
       <fieldset>
         <legend><h2>Newsletter</h2></legend>
+
+        <label>Select the newsletters you would like to receive</label>
         <ul>
-          <label>Select the newsletters you would like to receive</label>
           <li>
-            <input type="checkbox" name="newsletters" value="html">HTML News
+            <input id="html_news" type="checkbox" name="newsletters" value="html"><label for="html_news">HTML News</label>
           </li>
           <li>
-            <input type="checkbox" name="newsletters" value="css">CSS News
+            <input id="css_news" type="checkbox" name="newsletters" value="css"><label for="css_news">CSS News</label>
           </li>
           <li>
-            <input type="checkbox" name="newsletters" vakue="js">JavaScript News
+            <input id="js_news" type="checkbox" name="newsletters" value="js"><label for="js_news">JavaScript News</label>
           </li>
           </ul>
-        <ul>
-          <label>Newsletter format</label>
+
+        <label>Newsletter format</label>
+        <ul>  
           <li>
-            <input type="radio" name="format" value="html">HTML
+            <input id="html" type="radio" name="format" value="html"><label for="html">HTML</label>
           </li>
           <li>
-            <input type="radio" name="format" value="plain">Plain Text
+            <input id="plain" type="radio" name="format" value="plain"><label for="plain">Plain Text</label>
           </li>
         </ul>
         <ul>
